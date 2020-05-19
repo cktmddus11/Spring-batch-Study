@@ -15,8 +15,8 @@ public class DemoApplication {
 	private BatchController controller;
 	*/
 	public static void main(String[] args){	
-	//	SpringApplication.run(DemoApplication.class);
-		SpringApplication.run(LcmgrTestScheduler.class);
-		
+		//SpringApplication.run(DemoApplication.class);
+		//SpringApplication.run(LcmgrTestScheduler.class);
+		SpringApplication.run(DemoApplication.class, args);
 	}
 }
