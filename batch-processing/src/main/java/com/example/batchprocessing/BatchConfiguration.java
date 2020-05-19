@@ -52,7 +52,7 @@ public class BatchConfiguration { // reader, processor, writer 빈 추가
 	public JdbcBatchItemWriter<Person> writer(DataSource dataSource){
 		return new JdbcBatchItemWriterBuilder<Person>()
 				.itemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider<>())
-				 .sql("INSERT INTO SY_CHA (RID, MBR_NO) VALUES (:firstName, :lastName)")
+				 .sql("INSERT INTO people (first_name, last_name) VALUES (:firstName, :lastName)")
 				    .dataSource(dataSource)
 				    .build();
 	}
