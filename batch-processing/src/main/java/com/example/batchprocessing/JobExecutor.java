@@ -18,7 +18,7 @@ import org.springframework.batch.core.repository.JobRestartException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.DependsOn;
 
-@DependsOn("BatchConfiguration")
+/*@DependsOn("BatchConfiguration")*/
 public class JobExecutor implements Job{
 
 	@Autowired

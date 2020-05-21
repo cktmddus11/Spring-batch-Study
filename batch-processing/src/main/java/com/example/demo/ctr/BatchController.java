@@ -24,7 +24,7 @@ public class BatchController {
 	@Autowired
 	private Scheduler scheduler;
 	
-	@PostConstruct
+	//@PostConstruct
 	public void start(){
 		JobDetail aggreReqJobDetail = buildJobDetail(TrReReqJob.class, "testJob", "test", new HashMap<>()); 
 		
