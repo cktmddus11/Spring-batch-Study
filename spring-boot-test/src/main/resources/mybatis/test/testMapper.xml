@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.db.repository.TestMapper">
+	<!-- <select id="selectTest" resultType="com.example.dto.TestDto">  -->
+	<select id="selectTest" resultType="TestDto">   <!--  application.properties 에 풀 패키지명 안붙이게 설정 -->
+		select first_name as firstName, last_name as lastName from people
+	</select> 
+</mapper>
