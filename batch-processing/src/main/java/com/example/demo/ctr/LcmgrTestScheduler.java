@@ -19,7 +19,7 @@ public class LcmgrTestScheduler {
 	private SchedulerFactory schedulerFactory;
 	private Scheduler scheduler;
 	
-	@PostConstruct
+	//@PostConstruct
 	public void start() throws SchedulerException{
 		schedulerFactory = new StdSchedulerFactory();
 		scheduler = schedulerFactory.getScheduler();
