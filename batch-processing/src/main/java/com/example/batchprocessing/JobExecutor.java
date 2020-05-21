@@ -38,6 +38,7 @@ public class JobExecutor implements Job{
 		try {
 			jobParameters = new JobParametersBuilder().toJobParameters();
 			jobLauncher.run(jobLocator.getJob(jobName), jobParameters);
+			log.info("========"+jobParameters+"============");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
